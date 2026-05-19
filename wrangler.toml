@@ -4,6 +4,12 @@ compatibility_date = "2025-11-04"
 keep_vars = true
 workers_dev = true
 
+# 推荐使用 [vars] 而非 secret，避免 secret 读取异常
+# [vars]
+# ADMIN = "你的密码"
+# COUNTRY_PROXY = "JP:38.47.104.110,AU:206.245.167.71,SG:178.128.86.3"
+
+# KV 命名空间（绑定名称必须为 "KV"）
 [[kv_namespaces]]
 binding = "KV"
 id = "418310fc070e4963a9883ccfdfad3b93"
